@@ -22,25 +22,91 @@
 
   <h2>ABCU Advising Assistant</h2>
 
+  <p>
+    The ABCU Advising Assistant is a console-based advising tool designed to load course data and
+    support two primary actions: (1) displaying a sorted list of courses and (2) retrieving details
+    and prerequisites for a selected course. This artifact is used across all three capstone enhancement
+    categories to demonstrate progression in software engineering, algorithms and data structures, and
+    database design.
+  </p>
+
   <hr>
 
   <h3>Original Version</h3>
-  <p>description</p>
+  <p>
+    The original implementation focuses on baseline program functionality: loading course data from a CSV file,
+    storing course records in memory, and allowing the user to view courses and prerequisites through a
+    menu-driven interface. This version serves as the comparison point for the enhancements below.
+  </p>
+
+  <ul>
+    <li>
+      <a href="artifacts/original/AdvisingAssistant.cpp" target="_blank">View Original Source Code (AdvisingAssistant.cpp)</a>
+    </li>
+    <li>
+      <a href="artifacts/original/Program_Input.csv" target="_blank">View Original Input Data (Program_Input.csv)</a>
+    </li>
+  </ul>
 
   <hr>
 
   <h3>Enhancement 1 – Software Engineering</h3>
-  <p>description</p>
+  <p>
+    This enhancement improves maintainability and structure by refactoring the program toward a cleaner design.
+    Responsibilities are separated more clearly between data handling, program logic, and user interaction,
+    reducing coupling and making the code easier to test and extend. Defensive programming and structured error
+    handling were also emphasized to improve reliability.
+  </p>
+
+  <ul>
+    <li>
+      <a href="artifacts/enhancement1/AdvisingAssistant.cpp" target="_blank">View Enhancement 1 Source Code (AdvisingAssistant.cpp)</a>
+    </li>
+    <li>
+      <a href="artifacts/enhancement1/Program_Input.csv" target="_blank">View Input Data (Program_Input.csv)</a>
+    </li>
+  </ul>
 
   <hr>
 
-  <h3>Enhancement 2 – Algorithms & Data Structures</h3>
-  <p>description</p>
+  <h3>Enhancement 2 – Algorithms &amp; Data Structures</h3>
+  <p>
+    This enhancement focuses on algorithmic reasoning and data structure implementation by replacing higher-level
+    containers with a manually implemented hash table. The update demonstrates hashing strategy, collision handling
+    using chaining, and controlled traversal during search operations. This version highlights performance awareness
+    and trade-offs between abstraction and low-level control.
+  </p>
+
+  <ul>
+    <li>
+      <a href="artifacts/enhancement2/AdvisingAssistant.cpp" target="_blank">View Enhancement 2 Source Code (AdvisingAssistant.cpp)</a>
+    </li>
+    <li>
+      <a href="artifacts/enhancement2/Program_Input.csv" target="_blank">View Input Data (Program_Input.csv)</a>
+    </li>
+  </ul>
 
   <hr>
 
   <h3>Enhancement 3 – Databases</h3>
-  <p>description</p>
+  <p>
+    This enhancement introduces database-driven persistence by transitioning the artifact away from purely file-based
+    loading toward structured storage and retrieval using SQLite. It demonstrates data persistence, controlled access
+    patterns, and cleaner separation between application logic and the storage layer. This version reflects how storage
+    decisions influence reliability, maintainability, and future scalability.
+  </p>
+
+  <ul>
+    <li>
+      <a href="artifacts/enhancement3/AdvisingAssistant.cpp" target="_blank">View Enhancement 3 Source Code (AdvisingAssistant.cpp)</a>
+    </li>
+    <li>
+      <a href="artifacts/enhancement3/Program_Input.csv" target="_blank">View Input Data (Program_Input.csv)</a>
+    </li>
+    <li>
+      <a href="artifacts/enhancement3/ABCU.db" target="_blank">View SQLite Database (ABCU.db)</a>
+    </li>
+  </ul>
 
 </section>
 
