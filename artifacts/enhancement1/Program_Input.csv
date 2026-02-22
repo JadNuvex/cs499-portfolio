@@ -1,0 +1,23 @@
+MATH201,Discrete Mathematics,,
+CSCI300,Introduction to Algorithms,CSCI200,MATH201
+CSCI350,Operating Systems,CSCI300,
+CSCI101,Introduction to Programming in C++,CSCI100,
+CSCI100,Introduction to Computer Science,,
+CSCI301,Advanced Programming in C++,CSCI101,
+CSCI400,Large Software Development,CSCI301,CSCI350
+CSCI200,Data Structures,CSCI101,
+MATH301,Advanced Mathematics,CSCI200,MATH201
+CSCI500,Advanced Algorithms,CSCI300,MATH301
+CSCI600,Advanced Operating Systems,CSCI350,CSCI500
+CSCI102,Intermediate Programming in C++,CSCI101,
+CSCI201,Intermediate Computer Science,CSCI100,CSCI102
+CSCI302,Expert Programming in C++,CSCI301,CSCI201
+CSCI401,Expert Software Development,CSCI400,CSCI302
+CSCI250,Computer Networking,CSCI100,MATH201
+CSCI450,Advanced Computer Networking,CSCI250,CSCI200
+CSCI550,Expert Computer Networking,CSCI450,CSCI300
+CSCI202,Data Structures II,CSCI200,
+CSCI302,Data Structures III,CSCI202,
+CSCI402,Data Structures IV,CSCI302,
+PHYS201,Physics for Computer Scientists,CSCI100,
+PHYS301,Advanced Physics for Computer Scientists,PHYS201,CSCI200
