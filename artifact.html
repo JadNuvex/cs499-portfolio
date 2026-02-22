@@ -35,15 +35,24 @@
   <h3>Original Version</h3>
 
   <p>
-    The original implementation focuses on baseline program functionality: loading course data from a CSV file,
-    storing course records in memory, and allowing the user to view courses and prerequisites through a
-    menu-driven interface. This version serves as the comparison point for the enhancements below.
+    The artifact I selected is a C++ advising assistance program originally created during an earlier course
+    in the Computer Science program. The program reads course data from a CSV file, stores it in memory,
+    and allows a user to request a sorted list of classes or input a specific class to view its information
+    and prerequisites.
+  </p>
+
+  <p>
+    While the original program produced correct output, it focused primarily on functionality rather than
+    structure. Responsibilities were not clearly separated, inline comments were overly detailed in some
+    areas, and the design did not reflect layered organization. This version serves as the baseline
+    comparison point for the enhancements below.
   </p>
 
   <h3>System Flow Diagram</h3>
 
   <p>
-    The diagram below illustrates the overall control flow of the original program.
+    The diagram below illustrates the overall control flow of the original program, including file loading,
+    validation checks, menu navigation, and user interaction pathways.
   </p>
 
   <img
@@ -66,10 +75,31 @@
   <h3>Enhancement 1 – Software Engineering</h3>
 
   <p>
-    This enhancement improves maintainability and structure by refactoring the program toward a cleaner design.
-    Responsibilities are separated more clearly between data handling, program logic, and user interaction,
-    reducing coupling and making the code easier to test and extend. Defensive programming and structured error
-    handling were also emphasized to improve reliability.
+    This enhancement focuses on improving maintainability, structure, and reliability through stronger
+    software engineering practices. I selected this artifact because it provided a clear opportunity to
+    redesign an existing solution and demonstrate growth beyond simply producing functional output.
+  </p>
+
+  <p>
+    The original version lacked separation of concerns. With this enhancement, I restructured the program
+    to follow a layered design, separating the data layer, logic layer, and presentation layer. I converted
+    course data into an encapsulated class, modified the hash table logic to be UI-agnostic, and implemented
+    structured exception handling. These changes made the code easier to follow, test, and extend while
+    improving robustness.
+  </p>
+
+  <p>
+    One of the biggest lessons I learned during this process was the importance of separating logic from
+    user interface code. By removing console output from the logic layer and using exception-based error
+    handling, the system became more modular and easier to maintain. A challenge I faced was introducing
+    structural changes without breaking existing functionality. Implementing validation and structured
+    error handling required careful planning to prevent crashes and preserve behavior.
+  </p>
+
+  <p>
+    This enhancement demonstrates progress toward professional-level software engineering practices and aligns
+    with course outcomes related to designing maintainable computing solutions and applying defensive programming
+    techniques.
   </p>
 
   <ul>
@@ -86,10 +116,31 @@
   <h3>Enhancement 2 – Algorithms &amp; Data Structures</h3>
 
   <p>
-    This enhancement focuses on algorithmic reasoning and data structure implementation by replacing higher-level
-    containers with a manually implemented hash table. The update demonstrates hashing strategy, collision handling
-    using chaining, and controlled traversal during search operations. This version highlights performance awareness
-    and trade-offs between abstraction and low-level control.
+    This enhancement focuses on algorithmic reasoning and deeper data structure implementation. I selected
+    this artifact for this category because it provided a strong foundation for demonstrating algorithmic
+    thinking beyond standard library usage.
+  </p>
+
+  <p>
+    The earlier version relied on unordered_map to store course data. For this enhancement, I replaced it with
+    a manually implemented hash table using array-based indexing and linked-list chaining. I designed a custom
+    hash function, implemented collision handling through chaining, and controlled traversal during search
+    operations. These changes made time-complexity trade-offs, memory considerations, and collision strategies
+    more visible and intentional.
+  </p>
+
+  <p>
+    A major lesson from this enhancement was understanding the trade-offs between abstraction and control.
+    Implementing the hash table manually required careful reasoning about table sizing, hashing distribution,
+    and pointer management. One challenge was managing linked lists and dynamic memory without introducing
+    instability. Designing and testing the hash function to ensure reasonable performance under collisions
+    required structured experimentation.
+  </p>
+
+  <p>
+    This enhancement demonstrates growth from using data structures to designing them. It aligns with course
+    outcomes focused on designing and evaluating computing solutions using algorithmic principles while managing
+    design trade-offs.
   </p>
 
   <ul>
@@ -106,10 +157,29 @@
   <h3>Enhancement 3 – Databases</h3>
 
   <p>
-    This enhancement introduces database-driven persistence by transitioning the artifact away from purely file-based
-    loading toward structured storage and retrieval using SQLite. It demonstrates data persistence, controlled access
-    patterns, and cleaner separation between application logic and the storage layer. This version reflects how storage
-    decisions influence reliability, maintainability, and future scalability.
+    This enhancement introduces structured data persistence by transitioning the artifact from purely file-based
+    loading to a database-driven approach using SQLite. I selected this artifact for the databases category
+    because it allowed me to evolve an existing system into a more realistic data-driven design.
+  </p>
+
+  <p>
+    The original implementation relied entirely on in-memory data loaded from a CSV file. This enhancement applies
+    database principles such as persistence, separation of concerns, and structured data modeling. I separated
+    storage responsibilities from application logic, designed structured records that mirror database-style entities,
+    and implemented controlled access patterns for reading and managing stored course data.
+  </p>
+
+  <p>
+    One challenge in this enhancement was adapting a program that was not originally designed for persistence
+    without introducing unnecessary complexity or breaking functionality. This process emphasized the importance
+    of carefully planning data structures, validating stored data, and maintaining clear boundaries between the
+    database layer and the rest of the application.
+  </p>
+
+  <p>
+    Through this enhancement, I strengthened my understanding of how data-layer decisions impact reliability,
+    maintainability, and scalability. It aligns with course outcomes related to implementing computing solutions
+    using appropriate tools and designing structured, maintainable systems.
   </p>
 
   <ul>
